@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/public.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/javascripts/jquery-1.11.0.js"></script>
+</head>
+<body>
+<!--header开始-->
+<%- include header.ejs%>
+<!--header结束-->
+<!--banner开始-->
+<div id="banner">
+    <div class="wrap">
+        <p class="banp1">
+            记得当时年纪小</br>
+            你爱谈天我爱笑</br>
+            有一回并肩坐在桃树下</br>
+            风在林梢鸟在叫</br>
+            我们不知怎样睡着了</br>
+            梦里花落知多少</br>
+        </p>
+        <form class="form"  action="/users/shouye">
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">用户名：</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="userName" name="use">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">密码：</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="psw">
+            </div>
+
+            <button type="button" class="btn btn-default" onclick="logins">登录</button>
+
+            <button type="button" class="btn btn-default" onclick="location.href='/regi'">注册</button>
+
+        </form>
+
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+</script>
+</html>

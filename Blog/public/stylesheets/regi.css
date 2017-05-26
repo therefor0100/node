@@ -1,0 +1,35 @@
+body{
+    background-color: #fcf8e3;
+    background-image: url("../images/regi1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content{
+    padding: 50px;
+    height:640px;
+}
+.content h1{
+    padding: 10px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+.content div{
+    height:50px
+}
+.content label{
+    display: inline-block;
+    border-radius: 3px;
+    width:70px;
+    height:30px;
+    text-align: right;
+    margin-right:10px;
+}
+.content .sub{
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    border:0;
+    background-color: #f2dede;
+    margin-left:70px;
+}

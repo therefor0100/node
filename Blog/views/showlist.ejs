@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/public.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+	<link rel="stylesheet" href="/stylesheets/iconfont.css" />
+</style>
+</head>
+<body>
+
+	<%- include('header.ejs') %>
+	
+	<div class="navs wrap">
+	
+		<div class="titles">
+			<ul class="title">
+			<li>留言板</li>
+			<li style="float: right; font-size: 12px;font-weight: 500;cursor: pointer;" onclick="history.back(-1)"><i class="iconfont icon-fanhui"></i>返回上一页</li>
+		</ul>
+		</div>
+		
+   	<div class="box">
+   		<%  shuju.forEach(function(item,index){  %>
+	   		<div class="con">	
+	   			<p class="bti">标签：<%- item.biaoti%></p>
+	   			<p class="times"><%- item.times%></p>
+	   			<div class="txtareas">内容：<%- item.areas %></div>
+	   			<!-- <button class="btn">删除</button> -->
+	   		
+	   		</div>
+   			<%  }) %>
+   	</div>		
+	
+	</div>
+
+</body>
+<script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".shanchu").click(function(){
+//			alert("ok")
+		console.log($("."))
+		})
+		
+		
+		
+	})
+</script>
+</html>

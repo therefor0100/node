@@ -1,0 +1,213 @@
+body,html,p,img,ul,li,ol,dd,dt,dl,table,thead,tbody,tfoot,h1,h2,h3,h4,h5,h6,input,fieldset,label,button,legend,form,select,textarea,header,nav,article,aside,footer,section{
+  margin: 0;
+  padding: 0;
+}
+body{
+	background-color: #dedadb;
+}
+.header,.nav,.banner,.links,.news,.footer,header,nav,article,aside,footer,section,#header,#nav,#banner,#link,#news,#footer{
+  min-width: 1100px;
+}
+.wrap{
+  width:1100px;
+  margin: auto;
+}
+#wrap{
+  width:1100px;
+  margin: auto;
+}
+a{
+  text-decoration:none;
+}
+ul,li{
+  list-style: none;
+  float: left;
+}
+img{
+  border:0;
+}
+body{
+  height:640px;
+  background-image: url("../images/3.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size:100% 100%;
+  background-size:100% 100%;
+}
+/*header开始*/
+#header{
+  height:80px;
+  line-height: 80px;
+}
+#header .headlt{
+  width:260px;
+  height:80px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  /*margin-top: 15px;*/
+  margin-right: 160px;
+}
+.btns{
+  position: absolute;
+  right:100px;
+}
+/*!**************banner开始*******************!*/
+#banner{
+  height:500px;
+}
+.banp1{
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 28px;
+  color:#000;
+  float: left;
+  font-weight:500;
+  text-shadow: 1px 1px 1px #f2dede;
+}
+.form {
+  margin-top: 40px;
+  width: 400px;
+  height: 260px;
+  float: right;
+}
+.form button{
+  margin: 0 30px;
+}
+.banner{
+	height: 40px;
+	border-bottom: 1px solid #3071A9;
+}
+/*******************footer结束*********************/
+/*******************nav开始*********************/
+.nav{
+	min-height: 38px;
+	background-color: rgba(255,255,255,0.5);
+}
+/*.nav .line{
+	background: url(/images/line.jpg) repeat-x;
+}*/
+.nav ul{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;	
+	border-bottom: 1px solid #C8C7CC;
+	width: 100%;
+}
+.nav .titles{
+	height: 40px;
+}
+.nav li{
+	padding: 5px 10px;
+	cursor: pointer;
+	
+}
+.nav .cont{
+	padding: 10px;
+}
+.nav .cont input,.nav .cont .area{
+
+	outline: none;
+	border:0;
+	height: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	color: #666;
+	text-indent: 6px;
+	margin: 5px;
+	border-radius: 3px;
+	margin-left: 15px;
+}
+.nav .cont label{
+	font-size: 16px;
+	line-height: 26px;
+	display: block;
+	font-weight: normal;
+}
+.nav .cont .area{
+	height: 80px;
+	width: 450px;
+}
+.nav .cont1{
+	height: 220px;
+
+}
+.nav .history .con{
+	padding: 10px;
+
+}
+.navs{
+	min-height: 350px;
+	background-color: rgba(255,255,255,.5);
+	overflow: hidden;
+}
+.navs ul{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 40px;
+	height: 40px;
+	color: #666;
+	width: 100%;
+	text-indent: 12px;
+	
+	border-radius: 3px;
+
+}
+.navs .box{
+	padding: 10px 10px;
+	height: 520px;
+	overflow-x: scroll;
+
+}
+.navs .box .con{
+	padding: 5px;
+	border-bottom: 1px solid #AFD9EE;
+}
+.navs .box .bti{
+	padding: 3px;
+	font-size: 16px;
+	color: #000;
+	font-weight: 500;
+	font-family: "微软雅黑";
+	line-height: 22px;
+	
+	
+}
+.navs .txtareas{
+	padding: 5px 10px;
+	background-color: #fff;
+}
+.navs .shanchu{
+	margin: 3px;
+}
+.key{
+	color: #F14E41;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.key:hover{
+	text-decoration: underline;
+}
+.banners{
+	background-color: rgba(255,255,255,.5);
+	border-bottom: 1px solid #AFD9EE;
+	min-height: 50px;
+}
+table{
+	width: 500px;
+	min-height: 60px;
+	overflow: hidden;
+	display: block;
+	
+}
+table td{
+	display: block;
+	height: 28px;
+	line-height: 24px;
+	color: #333;
+}
+.banners .names{
+	padding-left: 10px;
+	padding-top: 10px;
+}

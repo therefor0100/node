@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/public.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+	<script src="/javascripts/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/javascripts/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="wrap">
+    	<div class="left"style="width: 60px;height: 60px;overflow: hidden;float: left;border-radius: 50%;margin-left: 30px;">
+    		<img src="/images/wode.jpg" alt="" style="width: 100%;height: 100%;"/>
+<p>ewri</p>	
+    	</div>
+        <%if(!user){%>
+        <div class="btns">
+            欢迎来到<span class="key">Mr.Zhang</span>的个人博客，请<button type="button" class="btn btn-default" onclick="location.href='/'">登录</button>
+            没有账户名？去<button type="button" class="btn btn-default" onclick="location.href='/regi'">注册</button>
+        </div>
+        <%}else{%>
+        <div>
+        </div>
+        <div class="btns">
+             欢迎来到<span class="key">Mr.Zhang</span>的个人博客,<button type="button" class="btn btn-default" onclick="location.href='/'">退出</button>
+            没有账户名？去<button type="button" class="btn btn-default" onclick="location.href='/regi'">注册</button>
+          或者<button type="button" class="btn btn-default" onclick="location.href='/'">登录</button>
+        </div>
+        <%}%>
+    </div>
+</div>
+    <div class="banner wrap">
+        <%if(!user){%>
+        <h3>欢迎</h3>
+        <%}else{%>
+        <h3>欢迎<%-user%></h3>
+        <%}%>
+    </div>
+	<div class="banners wrap">
+		
+		
+		
+		<div class="names" style="width: 500px;">
+			
+			<h4 style="font-weight: 600;">博主信息</h4>
+			<table border="0" cellspacing="" cellpadding="">
+				<tr>
+					<td>性别：女</td>
+					<td>QQ:1044078326</td>
+					<td>email：1044078326@qq.com</td>
+				</tr>
+			</table>
+		</div>
+		
+	</div>
+	<div class="nav wrap" style="height: 400px;">
+		<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" >
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" style="height: 35px;">留言</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" style="height: 35px;">文章</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" style="height: 35px;">我的</a></li>
+   
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" style="height: 385px;">
+    <div role="tabpanel" class="tab-pane active" id="home">
+    	<div class="cont">
+			<div class="cont1">
+				<form action="/users/list" method="post">
+					
+					<div class="names"><label class="names">标签</label><input type="text" name="biaoti" class="ipt"/></div>
+					<div class="essays"><label>留言</label>
+						<textarea name="area" class="area" placeholder="来了就留点什么吧~"></textarea></div>
+					<p class="times"></p>	
+					<button type="submit" class="btn btn-default fasong">发送</button>
+					
+				</form>
+			</div>
+		</div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+    	<div class="cont">
+    		<div class="cont1">
+				<form action="/users/wen" method="post">
+					
+					<div class="names"><label class="names">标签</label><input type="text" name="biaoti" class="ipt"/></div>
+					<div class="essays"><label>文章</label>
+						<textarea name="area" class="area" placeholder="说点什么吧"></textarea></div>
+					<p class="times"></p>	
+					<button type="submit" class="btn btn-default fasong">发表文章</button>
+					
+				</form>
+				
+			</div>	
+    	</div>
+	
+    </div>
+   
+    
+    <div role="tabpanel" class="tab-pane" id="messages">
+    	<h4 style="font-weight: 600;text-indent: 10px;height: 65px;line-height: 30px;">博主详情</h4>
+    
+  		  <img src="/images/my.png" alt="" style="height: 300px;width: 600px;margin: 10px;margin-left: 50px;"/>
+    	
+    </div>
+   
+  </div>
+
+	
+	</div>
+	
+	
+	
+</body>
+<script type="text/javascript">
+
+$(function(){
+	$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+$('#myTabs a:first').tab('show') // Select first tab
+$('#myTabs a:last').tab('show') // Select last tab
+$('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
+	
+})
+
+</script>
+</html>

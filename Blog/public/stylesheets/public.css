@@ -1,0 +1,25 @@
+body,html,p,img,ul,li,ol,dd,dt,dl,table,thead,tbody,tfoot,h1,h2,h3,h4,h5,h6,input,fieldset,label,button,legend,form,select,textarea,header,nav,article,aside,footer,section{
+    margin: 0;
+    padding: 0;
+}
+.header,.nav,.banner,.links,.news,.footer,header,nav,article,aside,footer,section,#header,#nav,#banner,#link,#news,#footer{
+    min-width: 1000px;
+}
+.wrap{
+        width:1000px;
+    margin: auto;
+}
+#wrap{
+    width:1100px;
+    margin: auto;
+}
+a{
+    text-decoration:none;
+}
+ul,li{
+    list-style: none;
+    float: left;
+}
+img{
+    border:0;
+}
